@@ -61,6 +61,9 @@ func main()  {
 		}
 		sum=sum+m2[i]*int(m)
 	}
-	S=sum%23
+	S=sum%sushu
+	if S<0 {
+		S=S+sushu
+	}
 	fmt.Println("秘密为：",S)
 }
